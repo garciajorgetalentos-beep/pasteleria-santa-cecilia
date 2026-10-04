@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pasteles de Bodas - Pastelería</title>
+  <link rel="stylesheet" href="estilos2.css">
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header class="top-bar">
+    <button id="openMenuBtn" class="menu-btn" aria-label="Abrir menú">☰</button>
+    <span class="brand-title">Pastelería</span>
+  </header>
+
+  <!-- FONDO OSCURO DE SOMBREO (OVERLAY) -->
+  <div id="overlay" class="overlay"></div>
+
+  <!-- MENÚ LATERAL DESPLEGABLE (SIDEBAR) -->
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-header">
+      <h2>Pastelería</h2>
+      <button id="closeMenuBtn" class="close-btn">&times;</button>
+    </div>
+
+    <nav class="sidebar-links">
+      <ul>
+        <li><a href="index.html">🏠 Inicio</a></li>
+        <li><a href="b.html">💍 Pasteles de Bodas</a></li>
+        <li><a href="p.html">👑 Princesas</a></li>
+        <li><a href="i.html">⚽ Infantil</a></li>
+        <li><a href="xv.html">👸🏻 XV Años</a></li>
+        <li><a href="v.html">🍰 Vitrina</a></li>
+        <li><a href="https://www.instagram.com/pasteleria_santa_cecilia?stkn=NXdmcHgwbWNwem84/">📸 Instagram</a></li>
+      </ul>
+    </nav>
+
+    <!-- DATOS DE CONTACTO DENTRO DEL MENÚ -->
+    <div class="sidebar-contact">
+      <h3>Contacto Directo</h3>
+      <p>📱 <strong>Tel:</strong> 477-559-7699</p>
+      <a href="https://wa.me/524775597699" target="_blank" class="whatsapp-btn">
+        Enviar WhatsApp
+      </a>
+    </div>
+  </aside>
+
+  <!-- Lista de pasteles de boda -->
+  <main class="categories-container">
+
+    <!-- Pastel 1 (Café Elegante) -->
+    <article class="product-card card-boda-elegante">
+      <div class="card-image-wrapper">
+        <img src="i1.png" alt="Pastel de pisos" class="product-img">
+      </div>
+      <div class="card-info">
+        <span class="badge-tag">Especial Infantil</span>
+        <h2 class="product-title">Pastel de pisos</h2>
+        <p class="product-description">
+          pastel personalizado de personajes por pisos.
+        </p>
+        <div class="card-actions">
+          <a href="https://www.instagram.com/pasteleria_santa_cecilia?stkn=NXdmcHgwbWNwem84/" class="btn-filled" target="_blank">instagram</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Pastel 2 (Verde Eucalipto / Rústico) -->
+    <article class="product-card card-boda-rustico">
+      <div class="card-image-wrapper">
+        <img src="i2.png" alt="Pastel Rústico" class="product-img">
+      </div>
+      <div class="card-info">
+        <span class="badge-tag">Cuadrado con diseño</span>
+        <h2 class="product-title">Cuadrado de personajes</h2>
+        <p class="product-description">
+          Pastel cuadrado con diseño de personajes relleno de frutas.
+        </p>
+        <div class="card-actions">
+          <a href="https://www.instagram.com/pasteleria_santa_cecilia?stkn=NXdmcHgwbWNwem84/" class="btn-filled" target="_blank">instagram</a>
+        </div>
+      </div>
+    </article>
+
+
+  </main>
+
+  <script>
+    const openMenuBtn = document.getElementById('openMenuBtn');
+    const closeMenuBtn = document.getElementById('closeMenuBtn');
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('overlay');
+
+    // Función para abrir menú
+    function openMenu() {
+      sidebar.classList.add('active');
+      overlay.classList.add('active');
+    }
+
+  // Función para cerrar menú
+    function closeMenu() {
+      sidebar.classList.remove('active');
+      overlay.classList.remove('active');
+    }
+
+  // Event Listeners
+    openMenuBtn.addEventListener('click', openMenu);
+    closeMenuBtn.addEventListener('click', closeMenu);
+    overlay.addEventListener('click', closeMenu); // Cierra al hacer clic afuera
+  </script>
+
+</body>
+</html>

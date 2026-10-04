@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pastelería</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <!-- BARRA SUPERIOR CON BOTÓN DE MENÚ -->
+  <header class="top-bar">
+    <button id="openMenuBtn" class="menu-btn" aria-label="Abrir menú">☰</button>
+    <span class="brand-title">Pastelería</span>
+  </header>
+
+  <!-- FONDO OSCURO DE SOMBREO (OVERLAY) -->
+  <div id="overlay" class="overlay"></div>
+
+  <!-- MENÚ LATERAL DESPLEGABLE (SIDEBAR) -->
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-header">
+      <h2>Pastelería</h2>
+      <button id="closeMenuBtn" class="close-btn">&times;</button>
+    </div>
+
+    <nav class="sidebar-links">
+      <ul>
+        <li><a href="index.html">🏠 Inicio</a></li>
+        <li><a href="b.html">💍 Pasteles de Bodas</a></li>
+        <li><a href="p.html">👑 Princesas</a></li>
+        <li><a href="i.html">⚽ Infantil</a></li>
+        <li><a href="xv.html">👸🏻 XV Años</a></li>
+        <li><a href="v.html">🍰 Vitrina</a></li>
+        <li><a href="https://www.instagram.com/pasteleria_santa_cecilia?stkn=NXdmcHgwbWNwem84/">📸 Instagram</a></li>
+      </ul>
+    </nav>
+
+    <!-- DATOS DE CONTACTO DENTRO DEL MENÚ -->
+    <div class="sidebar-contact">
+      <h3>Contacto Directo</h3>
+      <p>📱 <strong>Tel:</strong> 477-559-7699</p>
+      <a href="https://wa.me/524775597699" target="_blank" class="whatsapp-btn">
+        Enviar WhatsApp
+      </a>
+    </div>
+  </aside>
+
+  <!-- Sección Hero a Pantalla Completa (Full Width) -->
+  <section class="hero-fullwidth">
+    <video id="hero-video" autoplay loop muted playsinline>
+      <source src="video.mp4" type="video/mp4">
+    </video>
+
+  <!-- Botón de control -->
+    <button class="video-control-btn" id="playPauseBtn" aria-label="Pausar o reproducir video">
+      ❚❚
+    </button>
+  </section>
+
+  <!-- Categorías de Pasteles -->
+  <!-- SECCIÓN DE SABORES / TARJETAS -->
+  <main class="categories-container">
+    
+    <!-- Encabezado de la sección -->
+
+    <!-- Tarjeta 1: Bodas (Efecto Zebra / Crumbl) -->
+    <article class="product-card card-bodas">
+      <!-- Imagen que sobresale a la izquierda -->
+      <div class="card-image-wrapper">
+        <img src="b1.png" alt="Pastel de Bodas" class="product-img">
+      </div>
+
+      <!-- Contenido de la derecha -->
+      <div class="card-info">
+        <span class="badge-tag">Especial Bodas</span>
+        <h3 class="product-title">Pastel Elegante de Bodas</h3>
+        <p class="product-description">
+          Pastel para es ocasion especial y unica en la vida.
+        </p>
+        <div class="card-actions">
+          <a href="b.html" class="btn-outline">Averigua más</a>
+          <a href="https://www.instagram.com/pasteleria_santa_cecilia?stkn=NXdmcHgwbWNwem84/" class="btn-filled" target="_blank">instagram</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Tarjeta 2: Princesas -->
+    <article class="product-card card-princesas">
+      <div class="card-image-wrapper">
+        <img src="p1.png" alt="Pastel de Princesas" class="product-img">
+      </div>
+
+      <div class="card-info">
+        <span class="badge-tag tag-pink">Edición Infantil</span>
+        <h3 class="product-title">Pastel Princesas</h3>
+        <p class="product-description">
+          Esponjoso pan de 3 leches o pan seco, decorado con detalles magicos.
+        </p>
+        <div class="card-actions">
+          <a href="p.html" class="btn-outline">Averigua más</a>
+          <a href="https://www.instagram.com/pasteleria_santa_cecilia?stkn=NXdmcHgwbWNwem84/" class="btn-filled" target="_blank">instagram</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="product-card card-infantil">
+      <div class="card-image-wrapper">
+        <img src="i1.png" alt="Pastel Infantil" class="product-img">
+      </div>
+
+      <div class="card-info">
+        <span class="badge-tag tag-purple">Edición Infantil</span>
+        <h3 class="product-title">Pastel Infantil</h3>
+        <p class="product-description">
+          Esponjoso pan de 3 leches o pan seco, decorado con detalles magicos.
+        </p>
+        <div class="card-actions">
+          <a href="i.html" class="btn-outline">Averigua más</a>
+          <a href="https://www.instagram.com/pasteleria_santa_cecilia?stkn=NXdmcHgwbWNwem84/" class="btn-filled" target="_blank">instagram</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="product-card card-xv">
+      <div class="card-image-wrapper">
+        <img src="xv1.png" alt="Pastel XV" class="product-img">
+      </div>
+
+      <div class="card-info">
+        <span class="badge-tag tag-red">Edición XV</span>
+        <h3 class="product-title">Pastel XV</h3>
+        <p class="product-description">
+          Esponjoso pan de 3 leches o pan seco, decorado con detalles magicos.
+        </p>
+        <div class="card-actions">
+          <a href="xv.html" class="btn-outline">Averigua más</a>
+          <a href="https://www.instagram.com/pasteleria_santa_cecilia?stkn=NXdmcHgwbWNwem84/" class="btn-filled" target="_blank">instagram</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="product-card card-vitrina">
+      <div class="card-image-wrapper">
+        <img src="v1.png" alt="Pastel de Vitrina" class="product-img">
+      </div>
+
+      <div class="card-info">
+        <span class="badge-tag tag-blue">Edición de Vitrina</span>
+        <h3 class="product-title">Pastel de Vitrina</h3>
+        <p class="product-description">
+          Esponjoso pan de 3 leches o pan seco, decorado con detalles magicos.
+        </p>
+        <div class="card-actions">
+          <a href="v.html" class="btn-outline">Averigua más</a>
+          <a href="https://www.instagram.com/pasteleria_santa_cecilia?stkn=NXdmcHgwbWNwem84/" class="btn-filled" target="_blank">instagram</a>
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- SCRIPT PARA CONTROLAR EL VIDEO -->
+  <script>
+    const video = document.getElementById('hero-video');
+    const playPauseBtn = document.getElementById('playPauseBtn');
+
+    playPauseBtn.addEventListener('click', () => {
+      if (video.paused) {
+        video.play();
+        playPauseBtn.textContent = '❚❚';
+      } else {
+        video.pause();
+        playPauseBtn.textContent = '▶';
+      }
+    });
+  </script>
+
+  <script>
+    const openMenuBtn = document.getElementById('openMenuBtn');
+    const closeMenuBtn = document.getElementById('closeMenuBtn');
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('overlay');
+
+    // Función para abrir menú
+    function openMenu() {
+      sidebar.classList.add('active');
+      overlay.classList.add('active');
+    }
+
+  // Función para cerrar menú
+    function closeMenu() {
+      sidebar.classList.remove('active');
+      overlay.classList.remove('active');
+    }
+
+  // Event Listeners
+    openMenuBtn.addEventListener('click', openMenu);
+    closeMenuBtn.addEventListener('click', closeMenu);
+    overlay.addEventListener('click', closeMenu); // Cierra al hacer clic afuera
+  </script>
+</body>
+</html>
